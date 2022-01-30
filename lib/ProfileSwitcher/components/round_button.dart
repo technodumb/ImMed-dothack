@@ -3,12 +3,10 @@ import 'package:immed_dothack/globals.dart';
 
 class RoundButton extends StatelessWidget {
   final int id;
-  final String name;
   final Color color, textColor;
   const RoundButton({
     Key? key,
     required this.id,
-    required this.name,
     this.color = kPrimaryColor,
     this.textColor = Colors.white,
   }) : super(key: key);
@@ -37,7 +35,7 @@ class RoundButton extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.01),
             Text(
-              name,
+              profileNames[id - 1],
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 20,
