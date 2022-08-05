@@ -11,12 +11,12 @@ class FullCheckUpScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         child: Center(
           child: Column(
-            children: [
-              const Text("Full Check Up",
+            children: const [
+               Text("Full Check Up",
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-              const SizedBox(height: 50),
-              const Text('Searching for ImMed devices nearby'),
-              const SizedBox(height: 16),
+               SizedBox(height: 50),
+               Text('Searching for ImMed devices nearby'),
+               SizedBox(height: 16),
               Image(image: AssetImage('assets/loading.gif')),
             ],
           ),
